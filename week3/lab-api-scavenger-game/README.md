@@ -15,7 +15,7 @@ In order to get started, we'd like you to create an access token in your [Github
 1. Select the scopes for which you allow the token to access. Check at least all the `repo` checkboxes as shown in the screenshot below.
 1. Click `Generate token`. Github will create a personal access token for you. 
 
-![Github create personal token](../../images/github-create-token.png)
+![alt text](https://github.com/Rairocha/data-sao-sep2019/blob/master/week3/lab-api-scavenger-game/github-create-token.png)
 
 A personal access token is a secret password to allow you or your app to make remote requests to the Github API. It is the same [oAuth](https://oauth.net/) technology as the Twitter developer access token discussed in the lesson but in Github you don't need to wait for the approval and your token will be available immediately. 
 
@@ -26,7 +26,7 @@ A personal access token is a secret password to allow you or your app to make re
 After generating the token, you can test it with `curl` in the Terminal. Assuming your Git username is `johndoe` and token is `d10ev1shpm10x5qox9ckw1k9b792p9rq0ogplpn5cyo55`, you can make the curl command in the following way:
 
 ```bash
-$ curl -u johndoe:d10ev1shpm10x5qox9ckw1k9b792p9rq0ogplpn5cyo55 https://api.github.com/user`
+$ curl -u johndoe:d10ev1shpm10x5qox9ckw1k9b792p9rq0ogplpn5cyo55 https://api.github.com/user
 ```
 
 If your token is valid, you will see a JSON response that looks like:
@@ -48,7 +48,7 @@ If your token is valid, you will see a JSON response that looks like:
 Because it is inconvenient to read long API responses in Terminal, you can export the response into a physical file with the following command:
 
 ```bash
-$ curl -u johndoe:d10ev1shpm10x5qox9ckw1k9b792p9rq0ogplpn5cyo55 https://api.github.com/user` > output.json
+$ curl -u johndoe:d10ev1shpm10x5qox9ckw1k9b792p9rq0ogplpn5cyo55 https://api.github.com/user > output.json
 ```
 
 Then you can open `output.json` with your favorite text editor to have a deep look.
